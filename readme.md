@@ -1,21 +1,21 @@
-# Joan's Art Gallery
+# Nouval's Art Gallery
 
 In this part of my portfolio, I aimed to recreate a virtual first-person experience of exploring an art gallery. To achieve this, I created first-person controls and integrated all my side projects as if they were part of the museum's exhibits.
 
-You can now explore it [here](https://joan-art-gallery.app/).
+You can now explore it [here](https://nouval-art-gallery.app/).
 ## Links
 
-### Joan Ramos Refusta's Portfolio
-- [Source Code](https://github.com/jrefusta/joan-portfolio)
-- [Live Demo](https://joanramosrefusta.com/)
+### Muhammad Nouval Ar-Rizqy's Portfolio
+- [Source Code](https://github.com/nouvalrizqy05-ui/portofolio)
+- [Live Demo](https://muhammadnouvalarrizqy.vercel.app/)
 
-### Joan's Arcade Machine
-- [Source Code](https://github.com/jrefusta/joan-arcade-machine)
-- [Live Demo](https://joan-arcade-machine.vercel.app/)
+### Nouval's Arcade Machine
+- [Source Code](https://github.com/nouvalrizqy05-ui/nouval-arcade-machine)
+- [Live Demo](https://nouval-arcade-machine.vercel.app/)
 
-### Joan's OS
-- [Source Code](https://github.com/jrefusta/joan-os)
-- [Live Demo](https://joan-os.vercel.app/)
+### Nouval's OS
+- [Source Code](https://github.com/nouvalrizqy05-ui/nouval-os)
+- [Live Demo](https://nouval-os.vercel.app/)
 
 ## Setup
 
