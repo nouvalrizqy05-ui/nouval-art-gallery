@@ -166,16 +166,6 @@ export default [
         type: "texture",
       },
       {
-        name: "saveTheCrewDescription",
-        source: "/assets/descriptions/save-the-crew-description.png",
-        type: "texture",
-      },
-      {
-        name: "tfgDescription",
-        source: "/assets/descriptions/tfg-description.png",
-        type: "texture",
-      },
-      {
         name: "breakInDescription",
         source: "/assets/descriptions/break-in-description.png",
         type: "texture",
@@ -183,11 +173,6 @@ export default [
       {
         name: "qompDescription",
         source: "/assets/descriptions/qomp-description.png",
-        type: "texture",
-      },
-      {
-        name: "apocalypseNowDescription",
-        source: "/assets/descriptions/apocalypse-now-description.png",
         type: "texture",
       },
       {
