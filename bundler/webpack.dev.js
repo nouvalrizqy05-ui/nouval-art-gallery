@@ -1,12 +1,6 @@
 const { merge } = require('webpack-merge')
 const commonConfiguration = require('./webpack.common.js')
-const ip = require('internal-ip')
-const portFinderSync = require('portfinder-sync')
-
-const infoColor = (_message) =>
-{
-    return `\u001b[1m\u001b[34m${_message}\u001b[39m\u001b[22m`
-}
+const path = require('path')
 
 module.exports = merge(
     commonConfiguration,
@@ -15,24 +9,25 @@ module.exports = merge(
         devServer:
         {
             host: '0.0.0.0',
-            port: portFinderSync.getPort(8080),
-            contentBase: './dist',
-            watchContentBase: true,
+            port: 8080,
+            static: {
+                directory: path.join(__dirname, '../static'), // Menggantikan contentBase
+                watch: true, // Menggantikan watchContentBase
+            },
             open: true,
-            https: false,
-            useLocalIp: true,
-            disableHostCheck: true,
-            overlay: true,
-            noInfo: true,
-            after: function(app, server, compiler)
-            {
-                const port = server.options.port
-                const https = server.options.https ? 's' : ''
-                const localIp = ip.v4.sync()
-                const domain1 = `http${https}://${localIp}:${port}`
+            historyApiFallback: true,
+            allowedHosts: 'all', // Menggantikan disableHostCheck
+            client: {
+                overlay: true, // Menggantikan overlay di root
+                logging: 'none', // Menggantikan noInfo
+            },
+            setupMiddlewares: (middlewares, devServer) => {
+                const port = devServer.options.port
+                const https = devServer.options.https ? 's' : ''
                 const domain2 = `http${https}://localhost:${port}`
                 
-                console.log(`Project running at:\n  - ${infoColor(domain1)}\n  - ${infoColor(domain2)}`)
+                console.log(`Project running at:\n  - \x1b[1m\x1b[34m${domain2}\x1b[39m\x1b[22m`)
+                return middlewares
             }
         }
     }
