@@ -30,8 +30,10 @@
     "tweakpane": "^3.0.5",
     "vercel": "^33.6.2",
     "webpack": "^5.42.1",
-    "webpack-cli": "^4.7.2",
-    "webpack-dev-server": "^3.11.2",
     "webpack-merge": "^5.8.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.3"
   }
 }
